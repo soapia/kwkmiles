@@ -1,44 +1,44 @@
-body {
-            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');
+/*body {*/
+/*            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');*/
             background-size: cover;                      /* <------ */
-            background-repeat: no-repeat;
-            background-position: center center;
-            height: 100vh;
-        }
+/*            background-repeat: no-repeat;*/
+/*            background-position: center center;*/
+/*            height: 100vh;*/
+/*        }*/
         
-        html {
-            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');
+/*        html {*/
+/*            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');*/
             background-size: cover;                      /* <------ */
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
+/*            background-repeat: no-repeat;*/
+/*            background-position: center center;*/
+/*        }*/
         
-        body {
-            text-align: center;
-        }
+/*        body {*/
+/*            text-align: center;*/
+/*        }*/
         
-        h1 {
-            text-shadow: 0.5vh 0.5vh #5FBC56;
-            color: #222326;
-        }
-        button {
-            width: 10vh;
-            height: 10vh;
-        }
-        .britney {
-            background: url("https://media.giphy.com/media/l41YaEfCkjCyHl1Oo/giphy.gif") no-repeat;
-            height: 20vh; 
-            width: 30vh;   
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        p {
-            font-size: 2vh;
-        }
-        h1 {
-            font-size: 7vh;
-        }
-        h2 {
-            font-size: 5vh;
-        }
+/*        h1 {*/
+/*            text-shadow: 0.5vh 0.5vh #5FBC56;*/
+/*            color: #222326;*/
+/*        }*/
+/*        button {*/
+/*            width: 10vh;*/
+/*            height: 10vh;*/
+/*        }*/
+/*        .britney {*/
+/*            background: url("https://media.giphy.com/media/l41YaEfCkjCyHl1Oo/giphy.gif") no-repeat;*/
+/*            height: 20vh; */
+/*            width: 30vh;   */
+/*            background-size: cover;*/
+/*            background-repeat: no-repeat;*/
+/*            background-position: center center;*/
+/*        }*/
+/*        p {*/
+/*            font-size: 2vh;*/
+/*        }*/
+/*        h1 {*/
+/*            font-size: 7vh;*/
+/*        }*/
+/*        h2 {*/
+/*            font-size: 5vh;*/
+/*        }*/
