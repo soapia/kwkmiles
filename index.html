@@ -1,133 +1,239 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
     <head>
         <title>kwk miles!</title>
-        <link href="style.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|PT+Sans+Narrow" rel="stylesheet">
     </head>
     <body>
-        <br><br><br><br>
-        <h1>hey what's up hello</h1>
-        <p>select your first session:
-        <select id="firstSession">
-          <option value="Denver">Denver</option>
-          <option value="Phoenix">Phoenix</option>
-          <option value="New Orleans">New Orleans</option>
-          <option value="HOME" selected>N/A</option>
-        </select>
-        <br>
-        select your second session:
-        <select id="secondSession">
-          <option value="Albuquerque">Albuquerque</option>
-          <option value="Atlanta">Atlanta</option>
-          <option value="Baltimore">Baltimore</option>
-          <option value="San Francisco">San Francisco</option>
-          <option value="St. Louis">St. Louis</option>
-          <option value="HOME" selected>N/A</option>
-        </select>
-        <br>
-        select your third session:
-        <select id="thirdSession">
-          <option value="Boston">Boston</option>
-          <option value="Dallas Fort-Worth">Dallas Fort-Worth</option>
-          <option value="Miami">Miami</option>
-          <option value="Los Angeles">Los Angeles</option>
-          <option value="Tulsa">Tulsa</option>
-          <option value="Detroit">Detroit</option>
-          <option value="HOME" selected>N/A</option>
-        </select>
-        <br>
-        select your fourth session:
-        <select id="fourthSession">
-          <option value="Austin">Austin</option>
-          <option value="Buffalo">Buffalo</option>
-          <option value="Minneapolis">Minneapolis</option>
-          <option value="Raleigh-Durham">Raleigh-Durham</option>
-          <option value="Philadelphia">Philadelphia</option>
-          <option value="Portland">Portland</option>
-          <option value="Seattle">Seattle</option>
-          <option value="Omaha">Omaha</option>
-          <option value="Nashville">Nashville</option>
-          <option value="Los Angeles">LA Level 3</option>
-          <option value="St. Louis">STL Level 3</option>
-          <option value="HOME" selected>N/A</option>
-        </select>
-        <br>
-        select your fifth session:
-        <select id="fifthSession">
-          <option value="New York">New York</option>
-          <option value="Chicago">Chicago</option>
-          <option value="Los Angeles">LA Level 3</option>
-          <option value="St. Louis">STL Level 3</option>
-          <option value="HOME" selected>N/A</option>
-        </select>
-        <br>
-        last, but not least, where is home sweet home?
-        <select id="homeCity">
-          <option value="New York">New York</option>
-          <option value="Chicago">Chicago</option>
-          <option value="Los Angeles" selected>Los Angeles</option>
-          <option value="St. Louis">St. Louis</option>
-          <option value="Austin">Austin</option>
-          <option value="Minneapolis">Minneapolis</option>
-          <option value="Raleigh-Durham">Raleigh-Durham</option>
-          <option value="Boston">Boston</option>
-          <option value="Detroit">Detroit</option>
-          <option value="San Francisco">San Francisco</option>
-        </select>
-        </p>
-        <br><br>
-        <button onclick=myLocations() class="britney"></button>
-        <script src="script.js"></script>
-        <br>
-        <br><br>
-        <h2></h2>
+		<img src="img/logo.png" alt="logo" class="logo">
+		<div class="tablediv">
+		<table width="80%">
+  <tbody>
+    <tr>
+      <td width="20%"><div id="home">
+			<p>Where are you from?</p>
+			<select id="homeCity" class="selector">
+    			<option value="New York">New York</option>
+          		<option value="Chicago">Chicago</option>
+          		<option value="Los Angeles" selected>Los Angeles</option>
+          		<option value="St. Louis">St. Louis</option>
+          		<option value="Austin">Austin</option>
+          		<option value="Minneapolis">Minneapolis</option>
+          		<option value="Raleigh-Durham">Raleigh-Durham</option>
+          		<option value="Boston">Boston</option>
+          		<option value="Detroit">Detroit</option>
+          		<option value="San Francisco">San Francisco</option>
+			</select>
+</div>
+		</td>
+      <td width="20%"><div id="sesh1">
+        	<p>Session 1?</p>
+        	<select id="firstSession" class="selector">
+          		<option value="Denver">Denver</option>
+          		<option value="Phoenix">Phoenix</option>
+          		<option value="New Orleans">New Orleans</option>
+          		<option value="HOME" selected>N/A</option>
+		  </select></div></td>
+      <td width="20%"><div id="sesh2">
+        	<p>Session 2?</p>
+        	<select id="secondSession" class="selector">
+         		<option value="Albuquerque">Albuquerque</option>
+          		<option value="Atlanta">Atlanta</option>
+          		<option value="Baltimore">Baltimore</option>
+          		<option value="San Francisco">San Francisco</option>
+          		<option value="St. Louis">St. Louis</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+    </tr>
+    <tr>
+      <td><div id="sesh3">
+        	<p>Session 3?</p>
+        	<select id="thirdSession" class="selector">
+          		<option value="Boston">Boston</option>
+          		<option value="Dallas Fort-Worth">Dallas Fort-Worth</option>
+          		<option value="Miami">Miami</option>
+          		<option value="Los Angeles">Los Angeles</option>
+          		<option value="Tulsa">Tulsa</option>
+          		<option value="Detroit">Detroit</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+      <td><div id="sesh4">
+        	<p>Session 4?</p>
+        	<select id="fourthSession" class="selector">
+          		<option value="Austin">Austin</option>
+          		<option value="Buffalo">Buffalo</option>
+          		<option value="Minneapolis">Minneapolis</option>
+          		<option value="Raleigh-Durham">Raleigh-Durham</option>
+          		<option value="Philadelphia">Philadelphia</option>
+          		<option value="Portland">Portland</option>
+          		<option value="Seattle">Seattle</option>
+          		<option value="Omaha">Omaha</option>
+          		<option value="Nashville">Nashville</option>
+          		<option value="Los Angeles">LA Level 3</option>
+          		<option value="St. Louis">STL Level 3</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+      <td><div id="sesh5">
+        	<p>Session 5?</p>
+        	<select id="fifthSession" class="selector">
+          		<option value="New York">New York</option>
+          		<option value="Chicago">Chicago</option>
+          		<option value="Los Angeles">LA Level 3</option>
+          		<option value="St. Louis">STL Level 3</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+    </tr>
+  </tbody>
+</table>
+		</div>
+		
+
+<br>
+<h2></h2>
+        	<button onclick="myLocations()" class="britney"></button>
+        	<script src="script.js"></script>
+            
     </body>
-    <style>
-        body {
-            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');
-            background-size: cover;                      /* <------ */
-            background-repeat: no-repeat;
-            background-position: center center;
-            height: 100vh;
-        }
-        
-        html {
-            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');
-            background-size: cover;                      /* <------ */
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        
-        body {
-            text-align: center;
-        }
-        
-        h1 {
-            text-shadow: 0.5vh 0.5vh #5FBC56;
-            color: #222326;
-        }
-        button {
-            width: 10vh;
-            height: 10vh;
-        }
-        .britney {
-            background: url("https://media.giphy.com/media/l41YaEfCkjCyHl1Oo/giphy.gif") no-repeat;
-            height: 20vh; 
-            width: 30vh;   
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        p {
-            font-size: 2vh;
-        }
-        h1 {
-            font-size: 7vh;
-        }
-        h2 {
-            font-size: 5vh;
-        }
-    </style>
 </html>
+
+
+
+
+<!--<!doctype html>-->
+<!--<html>-->
+<!--    <head>-->
+<!--        <title>kwk miles!</title>-->
+<!--        <link href="style.css">-->
+<!--        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+<!--        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <br><br><br><br>-->
+<!--        <h1>hey what's up hello</h1>-->
+<!--        <p>select your first session:-->
+<!--        <select id="firstSession">-->
+<!--          <option value="Denver">Denver</option>-->
+<!--          <option value="Phoenix">Phoenix</option>-->
+<!--          <option value="New Orleans">New Orleans</option>-->
+<!--          <option value="HOME" selected>N/A</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        select your second session:-->
+<!--        <select id="secondSession">-->
+<!--          <option value="Albuquerque">Albuquerque</option>-->
+<!--          <option value="Atlanta">Atlanta</option>-->
+<!--          <option value="Baltimore">Baltimore</option>-->
+<!--          <option value="San Francisco">San Francisco</option>-->
+<!--          <option value="St. Louis">St. Louis</option>-->
+<!--          <option value="HOME" selected>N/A</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        select your third session:-->
+<!--        <select id="thirdSession">-->
+<!--          <option value="Boston">Boston</option>-->
+<!--          <option value="Dallas Fort-Worth">Dallas Fort-Worth</option>-->
+<!--          <option value="Miami">Miami</option>-->
+<!--          <option value="Los Angeles">Los Angeles</option>-->
+<!--          <option value="Tulsa">Tulsa</option>-->
+<!--          <option value="Detroit">Detroit</option>-->
+<!--          <option value="HOME" selected>N/A</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        select your fourth session:-->
+<!--        <select id="fourthSession">-->
+<!--          <option value="Austin">Austin</option>-->
+<!--          <option value="Buffalo">Buffalo</option>-->
+<!--          <option value="Minneapolis">Minneapolis</option>-->
+<!--          <option value="Raleigh-Durham">Raleigh-Durham</option>-->
+<!--          <option value="Philadelphia">Philadelphia</option>-->
+<!--          <option value="Portland">Portland</option>-->
+<!--          <option value="Seattle">Seattle</option>-->
+<!--          <option value="Omaha">Omaha</option>-->
+<!--          <option value="Nashville">Nashville</option>-->
+<!--          <option value="Los Angeles">LA Level 3</option>-->
+<!--          <option value="St. Louis">STL Level 3</option>-->
+<!--          <option value="HOME" selected>N/A</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        select your fifth session:-->
+<!--        <select id="fifthSession">-->
+<!--          <option value="New York">New York</option>-->
+<!--          <option value="Chicago">Chicago</option>-->
+<!--          <option value="Los Angeles">LA Level 3</option>-->
+<!--          <option value="St. Louis">STL Level 3</option>-->
+<!--          <option value="HOME" selected>N/A</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        last, but not least, where is home sweet home?-->
+<!--        <select id="homeCity">-->
+<!--          <option value="New York">New York</option>-->
+<!--          <option value="Chicago">Chicago</option>-->
+<!--          <option value="Los Angeles" selected>Los Angeles</option>-->
+<!--          <option value="St. Louis">St. Louis</option>-->
+<!--          <option value="Austin">Austin</option>-->
+<!--          <option value="Minneapolis">Minneapolis</option>-->
+<!--          <option value="Raleigh-Durham">Raleigh-Durham</option>-->
+<!--          <option value="Boston">Boston</option>-->
+<!--          <option value="Detroit">Detroit</option>-->
+<!--          <option value="San Francisco">San Francisco</option>-->
+<!--        </select>-->
+<!--        </p>-->
+<!--        <br><br>-->
+<!--        <button onclick=myLocations() class="britney"></button>-->
+<!--        <script src="script.js"></script>-->
+<!--        <br>-->
+<!--        <br><br>-->
+<!--        <h2></h2>-->
+<!--    </body>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');-->
+            
+<!--            background-position: center center;-->
+<!--            height: 100vh;-->
+<!--        }-->
+        
+<!--        html {-->
+<!--            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');-->
+            
+<!--            background-position: center center;-->
+<!--        }-->
+        
+<!--        body {-->
+<!--            text-align: center;-->
+<!--        }-->
+        
+<!--        h1 {-->
+<!--            text-shadow: 0.5vh 0.5vh #5FBC56;-->
+<!--            color: #222326;-->
+<!--        }-->
+<!--        button {-->
+<!--            width: 10vh;-->
+<!--            height: 10vh;-->
+<!--        }-->
+<!--        .britney {-->
+<!--            background: url("https://media.giphy.com/media/l41YaEfCkjCyHl1Oo/giphy.gif") no-repeat;-->
+<!--            height: 20vh; -->
+<!--            width: 30vh;   -->
+<!--            background-size: cover;-->
+<!--            background-repeat: no-repeat;-->
+<!--            background-position: center center;-->
+<!--        }-->
+<!--        p {-->
+<!--            font-size: 2vh;-->
+<!--        }-->
+<!--        h1 {-->
+<!--            font-size: 7vh;-->
+<!--        }-->
+<!--        h2 {-->
+<!--            font-size: 5vh;-->
+<!--        }-->
+<!--    </style>-->
+<!--</html>-->

@@ -1,44 +1,115 @@
-/*body {*/
-/*            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');*/
-            background-size: cover;                      /* <------ */
-/*            background-repeat: no-repeat;*/
-/*            background-position: center center;*/
-/*            height: 100vh;*/
-/*        }*/
+ body {
+	 text-align: center;
+	 background-color: azure
+        }
         
-/*        html {*/
-/*            background: url('https://media.giphy.com/media/13bGgH9VnEDsuA/giphy.gif');*/
-            background-size: cover;                      /* <------ */
-/*            background-repeat: no-repeat;*/
-/*            background-position: center center;*/
-/*        }*/
         
-/*        body {*/
-/*            text-align: center;*/
-/*        }*/
-        
-/*        h1 {*/
-/*            text-shadow: 0.5vh 0.5vh #5FBC56;*/
-/*            color: #222326;*/
-/*        }*/
-/*        button {*/
-/*            width: 10vh;*/
-/*            height: 10vh;*/
-/*        }*/
-/*        .britney {*/
-/*            background: url("https://media.giphy.com/media/l41YaEfCkjCyHl1Oo/giphy.gif") no-repeat;*/
-/*            height: 20vh; */
-/*            width: 30vh;   */
-/*            background-size: cover;*/
-/*            background-repeat: no-repeat;*/
-/*            background-position: center center;*/
-/*        }*/
-/*        p {*/
-/*            font-size: 2vh;*/
-/*        }*/
-/*        h1 {*/
-/*            font-size: 7vh;*/
-/*        }*/
-/*        h2 {*/
-/*            font-size: 5vh;*/
-/*        }*/
+        h1 {
+            color: #303030;
+			font-family: 'Homemade Apple', cursive;
+			font-size: 190%;
+        }
+        button {
+            width: 10vh;
+            height: 10vh;
+        }
+        .britney {
+            background: url("https://media.giphy.com/media/l41YaEfCkjCyHl1Oo/giphy.gif") no-repeat;
+            height: 20vh; 
+            width: 20vh;   
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+			border-radius: 80px;
+			margin-top: 1em;
+        }
+        p {
+            font-size: 110%;
+			font-family: 'PT Sans Narrow', sans-serif;
+			padding-top: 5em;
+			color: white;
+        }
+ 
+        h2 {
+            font-size: 5vh;
+			font-family: 'PT Sans Narrow', sans-serif;
+		
+        }
+
+select{
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding-bottom: 1em;
+	font-size: 1em;
+}
+
+.title{
+	padding-top:1em;
+}
+
+.selector{
+	padding-bottom: 10em;
+}
+/*
+img{
+	position: absolute;
+	z-index: -10;
+	text-align: center;
+}
+*/
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#sesh1{
+	height: 15em;
+	background: url("img/1.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#sesh2{
+	height: 15em;
+	background: url("img/2.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+#sesh3{
+	height: 15em;
+	background: url("img/3.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#sesh4{
+	height: 15em;
+	background: url("img/4.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#sesh5{
+	height: 15em;
+	background: url("img/5.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#home{
+	height: 15em;
+	background: url("img/6.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+.logo{
+	width:50%;
+}
+
